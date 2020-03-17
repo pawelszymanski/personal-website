@@ -1,1 +1,130 @@
-/* You can add global styles to this file, and also import other style files */
+@import styles/reset
+@import styles/mixins
+
+// imported from TTF file
+@include font-face('Aguda Regular', 'aguda-regular')
+$font-aguda: 'Aguda Regular'
+
+// imported from Google Fonts
+$font-ibm-plex-mono: 'IBM Plex Mono'
+$font-ibm-plex-sans: 'IBM Plex Sans'
+
+$grid: 90px
+
+$color-highlight-dark: #135836
+$color-highlight-light: #00f17c
+$color-text-light: white
+$color-text-dark: black
+
+$color-bg-navigation: black
+$color-bg-content: #1a1a1a
+$color-bg-content-glow: #182720
+
+
+
+
+
+$navigation-width: $grid * 3
+
+body
+  overflow-x: hidden
+  #navigation
+    +size($navigation-width, 100%)
+    background: $color-bg-navigation
+    +position-top(fixed, 0, 1)
+    padding-left: $grid
+  #content
+    margin-left: $navigation-width
+    background: $color-bg-content
+
+
+
+@mixin rotated-bullet-on-hover
+  &:before
+    transform: rotate(135deg)
+    background: $color-highlight-light
+
+#navigation
+  position: relative
+  h2
+    +size(600px, 20px)
+    +font($font-ibm-plex-mono, 20px, 20px, 300, uppercase, $color-text-light)
+    letter-spacing: 23px
+    margin: ($grid * 2 / 3) 0 ($grid * 1 / 2) 0
+  ul
+    &:before, &:after
+      content: ''
+      display: block
+      width: 1px
+      background: #707070
+    &:before
+      height: $grid * 2
+      margin-bottom: ($grid / 5)
+    &:after
+      height: 2000px
+      margin-top: ($grid / 5)
+    li
+      +position-left(relative, -9px)
+      +font($font-ibm-plex-sans, 12px, 18px, 400, $color-text-light)
+      padding-left: 6px
+      margin: 3px 0
+      &:before
+        content: ''
+        display: inline-block
+        +size(7px)
+        background: $color-highlight-dark
+        margin-right: 8px
+        transition: all 350ms ease-in-out
+      &:hover
+        cursor: pointer
+        background: #111
+        +rotated-bullet-on-hover
+    li.active
+      +rotated-bullet-on-hover
+
+
+
+$gradient-color-from: rgba($color-highlight-dark, 0.25)
+$gradient-color-to: rgba($color-highlight-dark, 0)
+
+#content
+  &:before
+    content: ''
+    display: block
+    +size(4000px)
+    +position-left-top(absolute, -1600px, -2000px)
+    background: -moz-radial-gradient(center, ellipse cover, $gradient-color-from 0%, $gradient-color-to 60%)
+    background: -webkit-radial-gradient(center, ellipse cover, $gradient-color-from  0%, $gradient-color-to 60%)
+    background: radial-gradient(ellipse at center, $gradient-color-from 0%, $gradient-color-to 60%)
+
+
+  section
+    padding-top: 305px
+    position: relative
+    h4, h2
+      max-width: $grid * 9
+    h4
+      +font($font-aguda, 120px, 120px, 400, $color-text-dark)
+      text-shadow: -0.3px -0.8px 0 rgba($color-highlight-light, .15)
+      padding-left: $grid / 4
+    h2
+      +font($font-aguda, 42px, 60px, 400, $color-text-light)
+      +position-left-top(absolute, 80px, 356px, 1)
+      padding-left: $grid
+
+
+
+section#intro
+  h2
+    white-space: pre
+  .quote
+    +position-left-top(absolute, $grid * 8, 255px, 1)
+    width: $grid* 3
+    +font($font-ibm-plex-mono, 12px, 16px, 300, $color-highlight-light, italic, pre)
+    &:before
+      content: '\'\''
+      display: block
+      +font(arial, 70px, 70px, 700, $color-text-dark, italic)
+      letter-spacing: -33px
+      +position-left(absolute, 10px)
+
