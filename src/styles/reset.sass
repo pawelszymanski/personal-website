@@ -1,3 +1,5 @@
+@import mixins
+
 *
   margin: 0
   padding: 0
@@ -5,6 +7,10 @@
 
 h1, h2, h3, h4, h5, h6, p
   cursor: default
+  +disable-selection
+
+h1, h2, h3, h4, h5, h6, p, a, cite, li
+  +disable-selection
 
 ul
   list-style: none

@@ -50,7 +50,7 @@
           text-transform: none
           $property: 'transform'
 
-        @if $property != 'weight' and $property != 'style' and $property != 'align' and $property != 'decoration' and $property != 'transform'
+        @if $property != 'white-space' and $property != 'weight' and $property != 'style' and $property != 'align' and $property != 'decoration' and $property != 'transform'
           @if $fonts_count > 0
             $font_family: $font_family + ', '
           $font_family: $font_family + "'" + $arg + "'"

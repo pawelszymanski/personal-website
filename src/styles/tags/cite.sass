@@ -1,0 +1,13 @@
+@import ../mixins
+@import ../variables
+
+cite
+  display: block
+  +font($font-ibm-plex-mono, 14px, 20px, 300, $color-highlight-light, italic)
+  +disable-selection
+  &:before
+    content: '\'\''
+    display: block
+    +position-left-top(absolute, -80px, -18px)
+    +font(calibri, 135px, 135px, 700, $color-text-dark, italic)
+    letter-spacing: -9px

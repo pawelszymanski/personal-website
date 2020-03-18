@@ -1,60 +1,46 @@
 @import styles/reset
 @import styles/mixins
+@import styles/helpers
+@import styles/variables
+@import styles/tags
 
-// imported from TTF file
-@include font-face('Aguda Regular', 'aguda-regular')
-$font-aguda: 'Aguda Regular'
+@mixin add-stripped-background
+  background: repeating-linear-gradient(-45deg, $color-highlight-light, $color-highlight-light 1px, #ffffff00 1px, #ffffff00 12px)
 
-// imported from Google Fonts
-$font-ibm-plex-mono: 'IBM Plex Mono'
-$font-ibm-plex-sans: 'IBM Plex Sans'
-
-$grid: 90px
-
-$color-highlight-dark: #135836
-$color-highlight-light: #00f17c
-$color-text-light: white
-$color-text-dark: black
-
-$color-bg-navigation: black
-$color-bg-content: #1a1a1a
-$color-bg-content-glow: #182720
-
-
-
+@mixin add-content-and-display-block
+  content: ''
+  display: block
 
 
 $navigation-width: $grid * 3
 
 body
-  overflow-x: hidden
   #navigation
+    +position-top(fixed, 0, 1)
     +size($navigation-width, 100%)
     background: $color-bg-navigation
-    +position-top(fixed, 0, 1)
     padding-left: $grid
   #content
     margin-left: $navigation-width
     background: $color-bg-content
+    overflow: hidden
 
 
-
-@mixin rotated-bullet-on-hover
-  &:before
-    transform: rotate(135deg)
-    background: $color-highlight-light
 
 #navigation
-  position: relative
-  h2
-    +size(600px, 20px)
+
+  h2.developer-name
+    +size(600px, $grid * 3 / 2)
     +font($font-ibm-plex-mono, 20px, 20px, 300, uppercase, $color-text-light)
     letter-spacing: 23px
-    margin: ($grid * 2 / 3) 0 ($grid * 1 / 2) 0
+    padding-top: ($grid * 2 / 3)
+    &:before
+      +add-content-and-display-block
+      background: red
+
   ul
     &:before, &:after
-      content: ''
-      display: block
+      +add-content-and-display-block
       width: 1px
       background: #707070
     &:before
@@ -65,66 +51,184 @@ body
       margin-top: ($grid / 5)
     li
       +position-left(relative, -9px)
-      +font($font-ibm-plex-sans, 12px, 18px, 400, $color-text-light)
-      padding-left: 6px
-      margin: 3px 0
-      &:before
-        content: ''
-        display: inline-block
-        +size(7px)
-        background: $color-highlight-dark
-        margin-right: 8px
-        transition: all 350ms ease-in-out
-      &:hover
-        cursor: pointer
-        background: #111
-        +rotated-bullet-on-hover
-    li.active
-      +rotated-bullet-on-hover
+      a
+        display: block
+        +font($font-ibm-plex-sans, 14px, 20px, 400, $color-text-light, no-decoration)
+        padding: 0 6px 2px 7px
+        margin: 1px 0
+        &:before
+          content: ''
+          display: inline-block
+          +size(7px)
+          background: $color-highlight-dark
+          margin-right: 8px
+          transition: all 350ms ease-in-out
+        &:hover, &.active
+          cursor: pointer
+          background: #111
+          &:before
+            transform: rotate(135deg)
+            background: $color-highlight-light
 
 
 
-$gradient-color-from: rgba($color-highlight-dark, 0.25)
-$gradient-color-to: rgba($color-highlight-dark, 0)
 
 #content
   &:before
-    content: ''
-    display: block
+    +add-content-and-display-block
+    +position-left-top(fixed, -1600px, -2000px)
     +size(4000px)
-    +position-left-top(absolute, -1600px, -2000px)
-    background: -moz-radial-gradient(center, ellipse cover, $gradient-color-from 0%, $gradient-color-to 60%)
-    background: -webkit-radial-gradient(center, ellipse cover, $gradient-color-from  0%, $gradient-color-to 60%)
-    background: radial-gradient(ellipse at center, $gradient-color-from 0%, $gradient-color-to 60%)
+    +gradient-radial(rgba($color-highlight-dark, 0.25), rgba($color-highlight-dark, 0))
 
+  //#theme-selection
+  //  +font($font-ibm-plex-sans, 14px, 20px, 700, $color-text-muted)
+  //  +position-left-top(absolute, $grid * 11, $grid * 2 / 3)
+  //  .theme-name
+  //  .toggle
+  //    display: inline-block
+  //    +position-top(relative, 1px)
+  //    +size(24px, 12px)
+  //    border: 2px solid $color-text-muted
+  //    border-radius: 10px
 
   section
-    padding-top: 305px
+    min-height: 1000px
     position: relative
     h4, h2
-      max-width: $grid * 9
+      width: $grid * 9
     h4
       +font($font-aguda, 120px, 120px, 400, $color-text-dark)
       text-shadow: -0.3px -0.8px 0 rgba($color-highlight-light, .15)
       padding-left: $grid / 4
     h2
       +font($font-aguda, 42px, 60px, 400, $color-text-light)
-      +position-left-top(absolute, 80px, 356px, 1)
       padding-left: $grid
 
 
 
 section#intro
+  h4
+    margin-top: 305px
+    margin-bottom: $grid / 2
+    &:after
+      +add-content-and-display-block
+      +size(2400px, 24px)
+      margin: ($grid / 2) 0 ($grid * 3 / 2) ($grid * 8 - $grid / 4)
+      +add-stripped-background
   h2
-    white-space: pre
-  .quote
+    +position-top(absolute, 356px, 1)
+  cite
     +position-left-top(absolute, $grid * 8, 255px, 1)
-    width: $grid* 3
-    +font($font-ibm-plex-mono, 12px, 16px, 300, $color-highlight-light, italic, pre)
-    &:before
-      content: '\'\''
-      display: block
-      +font(arial, 70px, 70px, 700, $color-text-dark, italic)
-      letter-spacing: -33px
-      +position-left(absolute, 10px)
+    width: $grid * 3
 
+
+
+section#summary
+  h4
+    margin-top: 200px
+  h2
+    +position-top(absolute, 251px, 1)
+  .name, .experience-summary, .list-label, ul
+    width: $grid * 4
+    margin-left: $grid * 3
+  .name
+    +font($font-ibm-plex-sans, 14px, 20px, 400, $color-highlight-light, uppercase)
+    margin-top: 20px
+    margin-bottom: 8px
+    position: relative
+    &:before
+      +add-content-and-display-block
+      +position-left-top(absolute, -$grid * 2, 0)
+      +size(80px, 20px)
+      +add-stripped-background
+  .experience-summary
+    +font($font-ibm-plex-sans, 14px, 20px, 300, rgba($color-text-light, 70%))
+  .list-label
+    +font($font-ibm-plex-sans, 14px, 20px, 400, $color-highlight-light, uppercase)
+    margin-top: 20px
+    margin-bottom: 8px
+  ul
+    margin-bottom: 60px
+    li
+      +font($font-ibm-plex-sans, 14px, 20px, 300, rgba($color-text-light, 70%))
+      position: relative
+      &:before, &:after
+        +add-content-and-display-block
+        background: $color-highlight-light
+      &:before
+        +position-left-top(absolute, -40px, 12px)
+        +size(30px, 1px)
+      &:after
+        +position-left-top(absolute, -15px, 11px)
+        +size(5px, 3px)
+
+  img
+    display: block
+    +position-left-top(absolute, $grid * 8, ($grid *4) + 15px)
+  .img-decorator
+    &:after
+      +add-content-and-display-block
+      +size(40px)
+      +position-right-bottom(absolute, 20px, 20px, -1)
+      +add-stripped-background
+
+
+
+section#proficiencies
+  +clearfix
+  h4
+    margin-top: 200px
+    margin-bottom: 20px
+  h2
+    +position-top(absolute, 251px, 1)
+  ul
+    float: left
+    +size(($grid * 2) + 2px, $grid * 5 / 4)
+    +font($font-ibm-plex-sans, 14px, 20px, 300, $color-text-light)
+    padding: 10px
+    border: 2px $color-highlight-dark solid
+    position: relative
+    &:nth-of-type(1)
+      margin-left: $grid
+    &:nth-of-type(2)
+      margin-left: $grid * 2
+    &:nth-of-type(5)
+      clear: left
+      margin-left: $grid
+    &:nth-of-type(2), &:nth-of-type(6)
+      left: -2px
+    &:nth-of-type(3), &:nth-of-type(7)
+      left: -4px
+    &:nth-of-type(4), &:nth-of-type(8)
+      left: -6px
+    &:nth-of-type(5), &:nth-of-type(6), &:nth-of-type(7), &:nth-of-type(8)
+      top: -2px
+  cite
+    +position-left-top(absolute, $grid * 8, 255px, 1)
+    width: $grid * 3
+  a
+    display: block
+    +size(($grid * 3) - 4px, 40px)
+    +font($font-ibm-plex-sans, 14px, 38px, $color-highlight-light, center, no-decoration)
+    background: $color-bg-content
+    border: 1px solid $color-highlight-dark
+    position: relative
+    top: 10px
+    left: 10px
+    transition: all 200ms linear
+    &:hover
+      background: $color-highlight-light
+      color: $color-text-dark
+      border-color: $color-highlight-light
+    &:before, &:after
+      +add-content-and-display-block
+      background: none
+    &:before
+      +position-block(absolute, -5px, -5px, -5px, -5px)
+      border: 2px solid $color-highlight-light
+      border-radius: 2px
+    &:after
+      +position-block(absolute, -3px, -3px, -3px, -3px)
+      border: 2px solid black
+
+section#beliefs
