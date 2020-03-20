@@ -6,3 +6,36 @@
 @import mixins/position
 @import mixins/position-block
 @import mixins/size
+
+@import variables
+
+
+
+@mixin add-stripped-background
+  background: repeating-linear-gradient(-45deg, $color-highlight-light, $color-highlight-light 1px, #ffffff00 1px, #ffffff00 12px)
+
+@mixin add-content-and-display-block
+  content: ''
+  display: block
+
+@mixin add-content-and-display-inline-block
+  content: ''
+  display: inline-block
+
+@mixin abstract-bullet
+
+@mixin add-bullet($bullet-length)
+  position: relative
+  &:before, &:after
+    +add-content-and-display-block
+    background: $color-highlight-light
+  &:before
+    +position-left-top(absolute, -10px -$bullet-length, 12px)
+    +size($bullet-length, 1px)
+    opacity: 0.33
+  &:after
+    +position-left-top(absolute, -15px, 11px)
+    +size(3px, 1px)
+    border: 1px solid $color-highlight-light
+    border-radius: 1px
+    opacity: 0.66

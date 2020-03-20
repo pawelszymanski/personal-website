@@ -1,0 +1,53 @@
+
+
+
+
+
+    <div id="theme-selection">
+      theme:
+      <span class="theme-name">light</span>
+      <span class="toggle"></span>
+      <span class="theme-name">dark</span>
+    </div>
+
+
+  #theme-selection
+    +font($font-ibm-plex-sans, 14px, 20px, 700, $color-text-muted)
+    +position-left-top(absolute, $grid * 11, $grid * 2 / 3)
+    .theme-name
+    .toggle
+      display: inline-block
+      +position-top(relative, 1px)
+      +size(24px, 12px)
+      border: 2px solid $color-text-muted
+      border-radius: 10px
+
+
+
+  .img-decorator
+    &:after
+      +add-content-and-display-block
+      +size(40px)
+      +position-right-bottom(absolute, 20px, 20px, -1)
+      +add-stripped-background
+
+
+  .name
+    +font($font-ibm-plex-sans, 14px, 20px, 400, $color-highlight-light, uppercase)
+    margin-top: 20px
+    margin-bottom: 8px
+    position: relative
+    &:before
+      +add-content-and-display-block
+      +position-left-top(absolute, -$grid * 2, 0)
+      +size(80px, 20px)
+      +add-stripped-background
+
+
+
+
+
+
+
+
+

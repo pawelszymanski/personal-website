@@ -8,42 +8,37 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <!-- Mono: 300, 300i -->
   <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,300i&display=swap" rel="stylesheet">
-  <!-- Sans: 400  -->
-  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+  <!-- Sans: 300, 400  -->
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+  <script src="assets/scripts/app.js"></script>
 </head>
 
 <body>
 
-
   <div id="navigation">
-    <h2 class="developer-name">Paweł Szymański</h2>
+    <h3>Paweł Szymański</h3>
     <ul>
       <li><a href="#intro">intro</a></li>
       <li><a href="#summary">summary</a></li>
       <li><a href="#proficiencies">proficiencies</a></li>
       <li><a href="#beliefs">beliefs</a></li>
-      <li><a href="#tech-stack-of-choice">tech stack of choice</a></li>
+      <li><a href="#tech-stack">tech stack</a></li>
       <li><a href="#personality">personality</a></li>
       <li><a href="#contact">contact</a></li>
     </ul>
   </div>
 
   <div id="content">
-    <!--<div id="theme-selection">-->
-      <!--theme:-->
-      <!--<span class="theme-name">light</span>-->
-      <!--<span class="toggle"></span>-->
-      <!--<span class="theme-name">dark</span>-->
-    <!--</div>-->
-
     <a name="intro"></a>
     <section id="intro">
       <h4>
-        front end<br/>
+        web<br/>
         developer
       </h4>
       <h2>
-        I create beautiful websites<br/>
+        I develop functional and<br/>
+        beautiful web applications<br/>
         using modern technical stack
       </h2>
       <cite>
@@ -58,24 +53,28 @@
     <section id="summary">
       <h4>summary</h4>
       <h2>Summary</h2>
-      <p class="name">
-        Paweł Szymański
-      </p>
-      <p class="experience-summary">
-        Over 15 years experience in web development, as User Experience Designer, Front End Developer and, occasionally, Project Manager.
-        Unique combination of UI/UX and front end programming skills. Product person. Thinker, but the one that delivers.
-        Capable of turning simple idea into perfectly executed product. Numerous major Single Page Applications build up to date.
-      </p>
-      <p class="list-label">
-        Traits
-      </p>
-      <ul>
-        <li>very conscientious, industrious and proactive</li>
-        <li>aesthetic sense and an eye for design</li>
-        <li>extremely focused on code quality</li>
-        <li>excellent communication, leadership and soft skills</li>
-        <li>rich entrepreneur, business and marketing experience</li>
-      </ul>
+      <div>
+        <h5>Paweł Szymański</h5>
+        <p>
+          Over 15 years experience in web development, as UX<br/>
+          Designer, Front End Developer and Project Manager.
+        </p>
+        <p>
+          Unique combination of UI/UX and programming skills.
+        </p>
+        <p>
+          Product person. Thinker, but the one that delivers.
+          Capable of turning simple idea into perfectly executed product.
+        </p>
+        <h5>Traits</h5>
+        <ul>
+          <li>very conscientious, industrious and proactive</li>
+          <li>aesthetic sense and an eye for design</li>
+          <li>extremely focused on code quality</li>
+          <li>excellent communication, leadership and soft skills</li>
+          <li>rich entrepreneur, business and marketing experience</li>
+        </ul>
+      </div>
       <img src="assets/images/pawel_szymanski.png">
     </section>
 
@@ -83,50 +82,49 @@
     <section id="proficiencies">
       <h4>proficiencies</h4>
       <h2>Proficiencies</h2>
-      <ul>
-        <li>UI</li>
-        <li>UX</li>
-      </ul>
-      <ul>
-        <li>CSS</li>
-        <li>SCSS</li>
-        <li>SASS</li>
-        <li>LESS</li>
-      </ul>
-      <ul>
-        <li>JavaScript</li>
-        <li>CoffeeScript</li>
-        <li>TypeScript</li>
-      </ul>
-      <ul>
-        <li>HTML</li>
-        <li>HAML</li>
-        <li>SLIM</li>
-      </ul>
-      <ul>
-        <li>jQuery</li>
-        <li>AngularJS</li>
-        <li>Angular 2+</li>
-      </ul>
-      <ul>
-        <li>Unit testing</li>
-        <li>Jasmine</li>
-        <li>Jest</li>
-        <li>Karma</li>
-        <li>Protractor</li>
-      </ul>
-      <ul>
-        <li>Photoshop</li>
-        <li>Illustrator</li>
-        <li>InDesign</li>
-        <li>Lightroom</li>
-      </ul>
-      <ul>
-        <li>Balsamiq</li>
-        <li>Visio</li>
-        <li>InVision</li>
-        <li>other mockuping tools</li>
-      </ul>
+      <div>
+        <ul>
+          <li>UI</li>
+          <li>UX</li>
+        </ul>
+        <ul>
+          <li>CSS</li>
+          <li>SCSS</li>
+          <li>SASS</li>
+          <li>LESS</li>
+        </ul>
+        <ul>
+          <li>JavaScript</li>
+          <li>CoffeeScript</li>
+          <li>TypeScript</li>
+        </ul>
+        <ul>
+          <li>HTML</li>
+          <li>HAML</li>
+        </ul>
+        <ul>
+          <li>jQuery</li>
+          <li>AngularJS</li>
+          <li>Angular 2+</li>
+        </ul>
+        <ul>
+          <li>Unit testing</li>
+          <li>Jasmine + Jest</li>
+          <li>Karma</li>
+          <li>Protractor</li>
+        </ul>
+        <ul>
+          <li>Photoshop</li>
+          <li>Illustrator</li>
+          <li>Lightroom</li>
+        </ul>
+        <ul>
+          <li>Balsamiq</li>
+          <li>Visio</li>
+          <li>InVision</li>
+          <li>other mockuping tools</li>
+        </ul>
+      </div>
       <cite>
         Hype driven development <br/>
         and earning by learning are<br/>
@@ -139,10 +137,42 @@
     <section id="beliefs">
       <h4>beliefs</h4>
       <h2>Beliefs</h2>
+      <h3>
+        I believe in simple, self-documented and semantic<br/>
+        code that implements a great UX and UI design.
+      </h3>
+      <div>
+        <h5>Principles</h5>
+        <h6>Maybe write here a line?</h6>
+        <ul>
+          <li><em>design:</em> it is a design makes products great, code is just a mean to acheve the design</li>
+          <li><em>simplicity:</em> know your craft, use the subset of tools you really need thou</li>
+          <li><em>semantic, self-documented:</em> give things proper names, be descriptive</li>
+        </ul>
+      </div>
+      <div>
+        <h5>Design</h5>
+        <h6>makes you develop better products faster</h6>
+        <ul>
+          <li>the trend is obvious: <a href="xxx">designers to programmers ratio changes</a></li>
+          <li>designing products is faster and less expensive than...</li>
+        </ul>
+      </div>
+      <div>
+        <h5>Simple code</h5>
+        <h6>gives a lot of benefits</h6>
+        <ul>
+          <li>the less code you write the less bugs yuo make</li>
+          <li>the simpler code you write on the easier is te read it hundreds of times</li>
+          <li>less code means it's easier to make changes and pivot the project</li>
+          <li>low complexity in codebase lets new developers be productive sooner</li>
+          <li>using concise languages and frameworks makes software development faster</li>
+        </ul>
+      </div>
     </section>
 
-    <a name="tech-stack-of-choice"></a>
-    <section id="tech-stack-of-choice">
+    <a name="tech-stack"></a>
+    <section id="tech-stack">
       <h4>tech stack</h4>
       <h2>Tech stack of choice</h2>
     </section>
@@ -162,5 +192,6 @@
   </div>
 
   <app-root></app-root>
+
 </body>
 </html>

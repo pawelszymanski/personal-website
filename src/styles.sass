@@ -4,47 +4,37 @@
 @import styles/variables
 @import styles/tags
 
-@mixin add-stripped-background
-  background: repeating-linear-gradient(-45deg, $color-highlight-light, $color-highlight-light 1px, #ffffff00 1px, #ffffff00 12px)
 
-@mixin add-content-and-display-block
-  content: ''
-  display: block
-
-
-$navigation-width: $grid * 3
 
 body
+  font-family: $font-ibm-plex-sans
+  font-size: $font-size
+  line-height: $line-height
   #navigation
     +position-top(fixed, 0, 1)
-    +size($navigation-width, 100%)
+    +size($grid * 3, 100%)
     background: $color-bg-navigation
     padding-left: $grid
   #content
-    margin-left: $navigation-width
+    margin-left: $grid * 3
     background: $color-bg-content
     overflow: hidden
 
 
 
 #navigation
-
-  h2.developer-name
-    +size(600px, $grid * 3 / 2)
+  h3
+    +size(600px, $grid * 4 / 3)
     +font($font-ibm-plex-mono, 20px, 20px, 300, uppercase, $color-text-light)
     letter-spacing: 23px
     padding-top: ($grid * 2 / 3)
-    &:before
-      +add-content-and-display-block
-      background: red
-
   ul
     &:before, &:after
       +add-content-and-display-block
       width: 1px
       background: #707070
     &:before
-      height: $grid * 2
+      height: $grid * 3 / 2
       margin-bottom: ($grid / 5)
     &:after
       height: 2000px
@@ -57,8 +47,7 @@ body
         padding: 0 6px 2px 7px
         margin: 1px 0
         &:before
-          content: ''
-          display: inline-block
+          +add-content-and-display-inline-block
           +size(7px)
           background: $color-highlight-dark
           margin-right: 8px
@@ -72,149 +61,108 @@ body
 
 
 
-
 #content
   &:before
     +add-content-and-display-block
     +position-left-top(fixed, -1600px, -2000px)
     +size(4000px)
-    +gradient-radial(rgba($color-highlight-dark, 0.25), rgba($color-highlight-dark, 0))
-
-  //#theme-selection
-  //  +font($font-ibm-plex-sans, 14px, 20px, 700, $color-text-muted)
-  //  +position-left-top(absolute, $grid * 11, $grid * 2 / 3)
-  //  .theme-name
-  //  .toggle
-  //    display: inline-block
-  //    +position-top(relative, 1px)
-  //    +size(24px, 12px)
-  //    border: 2px solid $color-text-muted
-  //    border-radius: 10px
-
+    +gradient-radial(rgba($color-highlight-dark, 0.15), rgba($color-highlight-dark, 0))
   section
-    min-height: 1000px
+    min-height: 100vh
     position: relative
     h4, h2
-      width: $grid * 9
+      position: absolute
     h4
-      +font($font-aguda, 120px, 120px, 400, $color-text-dark)
-      text-shadow: -0.3px -0.8px 0 rgba($color-highlight-light, .15)
-      padding-left: $grid / 4
+      left: $grid / 4
     h2
-      +font($font-aguda, 42px, 60px, 400, $color-text-light)
-      padding-left: $grid
+      left: $grid
+      z-index: 1
 
 
 
+$intro-bg-header-top: 247px
 section#intro
   h4
-    margin-top: 305px
-    margin-bottom: $grid / 2
+    top: $intro-bg-header-top
     &:after
       +add-content-and-display-block
-      +size(2400px, 24px)
-      margin: ($grid / 2) 0 ($grid * 3 / 2) ($grid * 8 - $grid / 4)
+      +size(2400px, 36px)
       +add-stripped-background
+      margin: ($grid / 2) 0 ($grid * 3 / 2) ($grid * 8 - $grid / 4)
   h2
-    +position-top(absolute, 356px, 1)
+    top: $intro-bg-header-top + $headers-y-offset
   cite
-    +position-left-top(absolute, $grid * 8, 255px, 1)
-    width: $grid * 3
+    +position-left-top(absolute, $grid * 8, $intro-bg-header-top - 80px)
 
 
 
+$summary-bg-header-top: $bg-header-top-base + $nav-item-y-size
 section#summary
   h4
-    margin-top: 200px
+    top: $summary-bg-header-top
   h2
-    +position-top(absolute, 251px, 1)
-  .name, .experience-summary, .list-label, ul
+    top: $summary-bg-header-top + $headers-y-offset
+  div
+    +position-left-top(absolute, $grid * 3, $summary-bg-header-top + 170px)
     width: $grid * 4
-    margin-left: $grid * 3
-  .name
-    +font($font-ibm-plex-sans, 14px, 20px, 400, $color-highlight-light, uppercase)
-    margin-top: 20px
-    margin-bottom: 8px
-    position: relative
-    &:before
-      +add-content-and-display-block
-      +position-left-top(absolute, -$grid * 2, 0)
-      +size(80px, 20px)
-      +add-stripped-background
-  .experience-summary
-    +font($font-ibm-plex-sans, 14px, 20px, 300, rgba($color-text-light, 70%))
-  .list-label
-    +font($font-ibm-plex-sans, 14px, 20px, 400, $color-highlight-light, uppercase)
-    margin-top: 20px
-    margin-bottom: 8px
-  ul
-    margin-bottom: 60px
-    li
-      +font($font-ibm-plex-sans, 14px, 20px, 300, rgba($color-text-light, 70%))
-      position: relative
-      &:before, &:after
-        +add-content-and-display-block
-        background: $color-highlight-light
+    h5:first-of-type
       &:before
-        +position-left-top(absolute, -40px, 12px)
-        +size(30px, 1px)
-      &:after
-        +position-left-top(absolute, -15px, 11px)
-        +size(5px, 3px)
-
+        +add-content-and-display-block
+        +position-left-top(absolute, -$grid * 2, 5px)
+        +size(80px, 20px)
+        +add-stripped-background
+    p
+      margin-top: 8px
+      &:last-of-type
+        margin-bottom: 25px
   img
     display: block
-    +position-left-top(absolute, $grid * 8, ($grid *4) + 15px)
-  .img-decorator
-    &:after
-      +add-content-and-display-block
-      +size(40px)
-      +position-right-bottom(absolute, 20px, 20px, -1)
-      +add-stripped-background
-
-
-
-section#proficiencies
-  +clearfix
-  h4
-    margin-top: 200px
-    margin-bottom: 20px
-  h2
-    +position-top(absolute, 251px, 1)
+    +position-left-top(absolute, $grid * 8, $summary-bg-header-top + 198px)
+    width: $grid * 2
   ul
-    float: left
-    +size(($grid * 2) + 2px, $grid * 5 / 4)
-    +font($font-ibm-plex-sans, 14px, 20px, 300, $color-text-light)
-    padding: 10px
-    border: 2px $color-highlight-dark solid
-    position: relative
-    &:nth-of-type(1)
-      margin-left: $grid
-    &:nth-of-type(2)
-      margin-left: $grid * 2
-    &:nth-of-type(5)
-      clear: left
-      margin-left: $grid
-    &:nth-of-type(2), &:nth-of-type(6)
-      left: -2px
-    &:nth-of-type(3), &:nth-of-type(7)
-      left: -4px
-    &:nth-of-type(4), &:nth-of-type(8)
-      left: -6px
-    &:nth-of-type(5), &:nth-of-type(6), &:nth-of-type(7), &:nth-of-type(8)
-      top: -2px
-  cite
-    +position-left-top(absolute, $grid * 8, 255px, 1)
-    width: $grid * 3
+    margin-top: 8px
+    li
+      line-height: 22px
+      +add-bullet($grid * 2 / 3)
+
+
+
+$proficiencies-bg-header-top: $bg-header-top-base + $nav-item-y-size * 2
+section#proficiencies
+  h4
+    top: $proficiencies-bg-header-top
+  h2
+    top: $proficiencies-bg-header-top + $headers-y-offset
+  div
+    +position-left-top(absolute, $grid, $proficiencies-bg-header-top + 200px)
+    +clearfix
+    ul
+      float: left
+      +size(($grid * 2) + 2px, $grid * 5 / 4)
+      +font($font-ibm-plex-sans, 14px, 20px, 300, $color-text-light)
+      background: #191d1b
+      padding: 10px
+      border: 2px $color-highlight-dark solid
+      position: relative
+      &:nth-of-type(2)
+        margin-left: $grid * 2
+      &:nth-of-type(5)
+        clear: left
+      &:nth-of-type(2), &:nth-of-type(6)
+        left: -2px
+      &:nth-of-type(3), &:nth-of-type(7)
+        left: -4px
+      &:nth-of-type(4), &:nth-of-type(8)
+        left: -6px
+      &:nth-of-type(5), &:nth-of-type(6), &:nth-of-type(7), &:nth-of-type(8)
+        top: -2px
   a
     display: block
+    +position-left-top(absolute, $grid * 3, 710px)
     +size(($grid * 3) - 4px, 40px)
     +font($font-ibm-plex-sans, 14px, 38px, $color-highlight-light, center, no-decoration)
     background: $color-bg-content
     border: 1px solid $color-highlight-dark
-    position: relative
-    top: 10px
-    left: 10px
     transition: all 200ms linear
     &:hover
       background: $color-highlight-light
@@ -230,5 +178,66 @@ section#proficiencies
     &:after
       +position-block(absolute, -3px, -3px, -3px, -3px)
       border: 2px solid black
+  cite
+    +position-left-top(absolute, $grid * 8, 701px)
 
+
+
+$beliefs-bg-header-top: $bg-header-top-base + $nav-item-y-size * 3
 section#beliefs
+  h4
+    top: $beliefs-bg-header-top
+  h2
+    top: $beliefs-bg-header-top + $headers-y-offset
+  h3
+    +position-left-top(absolute, $grid, 400px)
+    +font($font-ibm-plex-sans, 24px, 36px, 300, $color-text-light)
+  div
+    h6
+      margin-bottom: 8px
+    a
+      text-decoration: none
+      color: $color-text-light
+      border-bottom: 1px dashed $color-highlight-light
+      &:hover
+        border-style: solid
+    &:nth-of-type(1)
+      +position-left-top(absolute, $grid, 520px)
+    &:nth-of-type(2)
+      +position-left-top(absolute, $grid, 680px)
+      width: $grid * 7 / 2
+      ul
+        li
+          +add-bullet($grid / 4)
+    &:nth-of-type(3)
+      +position-left-top(absolute, $grid * 6, 680px)
+      width: $grid * 7 / 2
+      ul
+        li
+          +add-bullet($grid / 4)
+
+
+$tech-stack-bg-header-top: $bg-header-top-base + $nav-item-y-size * 4
+section#tech-stack
+  h4
+    top: $tech-stack-bg-header-top
+  h2
+    top: $tech-stack-bg-header-top + $headers-y-offset
+
+
+
+$personality-bg-header-top: $bg-header-top-base + $nav-item-y-size * 5
+section#personality
+  h4
+    top: $personality-bg-header-top
+  h2
+    top: $personality-bg-header-top + $headers-y-offset
+
+
+
+$contact-bg-header-top: $bg-header-top-base + $nav-item-y-size * 6
+section#contact
+  h4
+    top: $contact-bg-header-top
+  h2
+    top: $contact-bg-header-top + $headers-y-offset

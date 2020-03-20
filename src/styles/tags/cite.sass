@@ -3,11 +3,20 @@
 
 cite
   display: block
-  +font($font-ibm-plex-mono, 14px, 20px, 300, $color-highlight-light, italic)
+  width: $grid * 3
+  +font($font-ibm-plex-mono, 14px, 22px, 300, $color-highlight-light, italic)
   +disable-selection
+  &:before, &:after
+    +add-content-and-display-block
+    width: 8px
+    border-top: 25px solid #111
+    border-left: 3px solid transparent
+    border-right: 3px solid transparent
+    transform: skewX(-20deg)
   &:before
-    content: '\'\''
-    display: block
-    +position-left-top(absolute, -80px, -18px)
-    +font(calibri, 135px, 135px, 700, $color-text-dark, italic)
-    letter-spacing: -9px
+    +position-left-top(absolute, -50px, -5px)
+  &:after
+    +position-left-top(absolute, -30px, -5px)
+
+
+
