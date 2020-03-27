@@ -1,0 +1,243 @@
+@import reset
+@import mixins
+@import helpers
+@import variables
+@import tags
+
+
+
+body
+  font-family: $font-ibm-plex-sans
+  font-size: $font-size
+  line-height: $line-height
+  #navigation
+    +position-top(fixed, 0, 1)
+    +size($grid * 3, 100%)
+    background: $color-bg-navigation
+    padding-left: $grid
+  #content
+    margin-left: $grid * 3
+    background: $color-bg-content
+    overflow: hidden
+
+
+
+#navigation
+  h3
+    +size(600px, $grid * 4 / 3)
+    +font($font-ibm-plex-mono, 20px, 20px, 300, uppercase, $color-text-light)
+    letter-spacing: 23px
+    padding-top: ($grid * 2 / 3)
+  ul
+    &:before, &:after
+      +add-content-and-display-block
+      width: 1px
+      background: #707070
+    &:before
+      height: $grid * 3 / 2
+      margin-bottom: ($grid / 5)
+    &:after
+      height: 2000px
+      margin-top: ($grid / 5)
+    li
+      +position-left(relative, -9px)
+      a
+        display: block
+        +font($font-ibm-plex-sans, 14px, 20px, 400, $color-text-light, no-decoration)
+        padding: 0 6px 2px 7px
+        margin: 1px 0
+        &:before
+          +add-content-and-display-inline-block
+          +size(7px)
+          background: $color-highlight-dark
+          margin-right: 8px
+          transition: all 350ms ease-in-out
+        &:hover, &.active
+          cursor: pointer
+          background: #111
+          &:before
+            transform: rotate(135deg)
+            background: $color-highlight-light
+
+
+
+#content
+  &:before
+    +add-content-and-display-block
+    +position-left-top(fixed, -1600px, -2000px)
+    +size(4000px)
+    +gradient-radial(rgba($color-highlight-dark, 0.15), rgba($color-highlight-dark, 0))
+  section
+    min-height: 100vh
+    position: relative
+    h4, h2
+      position: absolute
+    h4
+      left: $grid / 4
+    h2
+      left: $grid
+      z-index: 1
+
+
+
+$intro-bg-header-top: 247px
+section#intro
+  h4
+    top: $intro-bg-header-top
+    &:after
+      +add-content-and-display-block
+      +size(2400px, 36px)
+      +add-stripped-background
+      margin: ($grid / 2) 0 ($grid * 3 / 2) ($grid * 8 - $grid / 4)
+  h2
+    top: $intro-bg-header-top + $headers-y-offset
+  cite
+    +position-left-top(absolute, $grid * 8, $intro-bg-header-top - 80px)
+
+
+
+$summary-bg-header-top: $bg-header-top-base + $nav-item-y-size
+section#summary
+  h4
+    top: $summary-bg-header-top
+  h2
+    top: $summary-bg-header-top + $headers-y-offset
+  div
+    +position-left-top(absolute, $grid * 3, $summary-bg-header-top + 170px)
+    width: $grid * 4
+    h5:first-of-type
+      &:before
+        +add-content-and-display-block
+        +position-left-top(absolute, -$grid * 2, 5px)
+        +size(80px, 20px)
+        +add-stripped-background
+    p
+      margin-top: 8px
+      &:last-of-type
+        margin-bottom: 25px
+  img
+    display: block
+    +position-left-top(absolute, $grid * 8, $summary-bg-header-top + 198px)
+    width: $grid * 2
+  ul
+    margin-top: 8px
+    li
+      line-height: 22px
+      +add-bullet($grid * 2 / 3)
+
+
+
+$proficiencies-bg-header-top: $bg-header-top-base + $nav-item-y-size * 2
+section#proficiencies
+  h4
+    top: $proficiencies-bg-header-top
+  h2
+    top: $proficiencies-bg-header-top + $headers-y-offset
+  div
+    +position-left-top(absolute, $grid, $proficiencies-bg-header-top + 200px)
+    +clearfix
+    ul
+      float: left
+      +size(($grid * 2) + 2px, $grid * 5 / 4)
+      +font($font-ibm-plex-sans, 14px, 20px, 300, $color-text-light)
+      background: #191d1b
+      padding: 10px
+      border: 2px $color-highlight-dark solid
+      position: relative
+      &:nth-of-type(2)
+        margin-left: $grid * 2
+      &:nth-of-type(5)
+        clear: left
+      &:nth-of-type(2), &:nth-of-type(6)
+        left: -2px
+      &:nth-of-type(3), &:nth-of-type(7)
+        left: -4px
+      &:nth-of-type(4), &:nth-of-type(8)
+        left: -6px
+      &:nth-of-type(5), &:nth-of-type(6), &:nth-of-type(7), &:nth-of-type(8)
+        top: -2px
+  a
+    display: block
+    +position-left-top(absolute, $grid * 3, 710px)
+    +size(($grid * 3) - 4px, 40px)
+    +font($font-ibm-plex-sans, 14px, 38px, $color-highlight-light, center, no-decoration)
+    background: $color-bg-content
+    border: 1px solid $color-highlight-dark
+    transition: all 200ms linear
+    &:hover
+      background: $color-highlight-light
+      color: $color-text-dark
+      border-color: $color-highlight-light
+    &:before, &:after
+      +add-content-and-display-block
+      background: none
+    &:before
+      +position-block(absolute, -5px, -5px, -5px, -5px)
+      border: 2px solid $color-highlight-light
+      border-radius: 2px
+    &:after
+      +position-block(absolute, -3px, -3px, -3px, -3px)
+      border: 2px solid black
+  cite
+    +position-left-top(absolute, $grid * 8, 701px)
+
+
+
+$beliefs-bg-header-top: $bg-header-top-base + $nav-item-y-size * 3
+section#beliefs
+  h4
+    top: $beliefs-bg-header-top
+  h2
+    top: $beliefs-bg-header-top + $headers-y-offset
+  h3
+    +position-left-top(absolute, $grid, 400px)
+    +font($font-ibm-plex-sans, 24px, 36px, 300, $color-text-light)
+  div
+    h6
+      margin-bottom: 8px
+    a
+      text-decoration: none
+      color: $color-text-light
+      border-bottom: 1px dashed $color-highlight-light
+      &:hover
+        border-style: solid
+    &:nth-of-type(1)
+      +position-left-top(absolute, $grid, 520px)
+    &:nth-of-type(2)
+      +position-left-top(absolute, $grid, 680px)
+      width: $grid * 7 / 2
+      ul
+        li
+          +add-bullet($grid / 4)
+    &:nth-of-type(3)
+      +position-left-top(absolute, $grid * 6, 680px)
+      width: $grid * 7 / 2
+      ul
+        li
+          +add-bullet($grid / 4)
+
+
+$tech-stack-bg-header-top: $bg-header-top-base + $nav-item-y-size * 4
+section#tech-stack
+  h4
+    top: $tech-stack-bg-header-top
+  h2
+    top: $tech-stack-bg-header-top + $headers-y-offset
+
+
+
+$personality-bg-header-top: $bg-header-top-base + $nav-item-y-size * 5
+section#personality
+  h4
+    top: $personality-bg-header-top
+  h2
+    top: $personality-bg-header-top + $headers-y-offset
+
+
+
+$contact-bg-header-top: $bg-header-top-base + $nav-item-y-size * 6
+section#contact
+  h4
+    top: $contact-bg-header-top
+  h2
+    top: $contact-bg-header-top + $headers-y-offset
