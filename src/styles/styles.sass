@@ -5,6 +5,19 @@
 @import tags
 
 
+@keyframes reveal
+  from
+    width: 100%
+    background: white
+  10%
+    width: 100%
+    background: $color-bg-content
+  80%
+    width: 100%
+    background: $color-bg-content
+  to
+    width: $grid * 3
+    background: $color-bg-navigation
 
 body
   font-family: $font-ibm-plex-sans
@@ -15,6 +28,7 @@ body
     +size($grid * 3, 100%)
     background: $color-bg-navigation
     padding-left: $grid
+    animation: reveal 5s
   #content
     margin-left: $grid * 3
     background: $color-bg-content
@@ -198,6 +212,7 @@ section#beliefs
     a
       text-decoration: none
       color: $color-text-light
+      padding-bottom: 1px
       border-bottom: 1px dashed $color-highlight-light
       &:hover
         border-style: solid

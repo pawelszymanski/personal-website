@@ -1,8 +1,12 @@
 class LayerManager
 
+  BLUR = {property: 'filter', fn: (offset) -> "blur(#{Math.min(9, Math.abs(offset / 200))}px)"}
+  OPACITY = {property: 'opacity', fn: (offset) -> "#{1 - Math.abs(offset / 1000)}"}
+
   LAYERS: [
-    { selector: 'section h4', scrollSpeed: 0.5 }
-    { selector: 'section h2', scrollSpeed: 1.5 }
+    { selector: 'section h4', scrollSpeed: +0.25, cssCallbacks: [BLUR, OPACITY] }
+    { selector: 'section h2', scrollSpeed: -0.45, cssCallbacks: [BLUR, OPACITY] }
+    { selector: 'cite', scrollSpeed: +2, cssCallbacks: [BLUR, OPACITY] }
   ]
 
   initLayers: =>
@@ -11,23 +15,30 @@ class LayerManager
       $(layer.selector).each (index, element) =>
         layer.elements.push
           $el: $(element)
-          initialOffset: $(element).offset().top
-      layer.offsetBase = if layer.elements then layer.elements[0].$el.offset().top else null
+          initialTop: $(element).offset().top
+          sectionInitialTop: $(element).offsetParent().first().offset().top
+      layer.offsetBase = layer.elements[0].$el.offset().top
 
   adjustElements: =>
     scrollTop = $('html').scrollTop()
     @LAYERS.forEach (layer) =>
       layer.elements.forEach (element) =>
-        relativeOffset = element.initialOffset - layer.offsetBase
-        offsetTop = element.initialOffset + ((relativeOffset - scrollTop) * layer.scrollSpeed)
-        element.$el.offset({top: offsetTop})
+        offset = (scrollTop - element.sectionInitialTop)
+        element.$el.offset({top: element.initialTop + (offset * layer.scrollSpeed)})
+        if layer.cssCallbacks
+          layer.cssCallbacks.forEach (cb) =>
+            element.$el.css cb.property, cb.fn(offset)
 
   constructor: ->
     @initLayers()
     @adjustElements()
 
+    @timer = null
+    @throttle = 0
+
     $(window).on 'scroll', =>
-      @adjustElements()
+      clearTimeout(@timer)
+      @timer = setTimeout(@adjustElements, @throttle)
 
 
 

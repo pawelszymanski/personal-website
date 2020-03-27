@@ -7,9 +7,9 @@ class NavigationAnimation
     $(@NAV_ITEMS_SELECTOR).on 'click', (event) =>
       event.preventDefault()
       targetAnchorName = $(event.currentTarget).attr('href').replace('#', '')
-      $('html, body').animate(
-        {scrollTop: $("a[name='#{targetAnchorName}']").offset().top}, @ANIMATION_TIME, 'swing'
-      )
+      $('html, body')
+        .stop()
+        .animate({scrollTop: $("a[name='#{targetAnchorName}']").offset().top}, @ANIMATION_TIME, 'swing')
 
 
 
