@@ -3,8 +3,9 @@ sass = require 'gulp-sass'
 coffee = require 'gulp-coffee'
 concat = require 'gulp-concat'
 connect = require 'gulp-connect'
+sourcemaps = require 'gulp-sourcemaps'
+minify = require 'gulp-minify'
 del = require 'del'
-
 
 CLEAN = 'clean'
 VIEWS = 'views'
@@ -47,14 +48,20 @@ gulp.task ASSETS, ->
 
 gulp.task SCRIPTS_VENDOR, ->
   src(['./src/scripts/vendor/**/*.js'])
+    .pipe(sourcemaps.init())
     .pipe(concat('vendor.js'))
+    .pipe(minify())
+    .pipe(sourcemaps.write('.'))
     .pipe(dest('./dist/assets/scripts/'))
     .pipe(connect.reload())
 
 gulp.task SCRIPTS_APP, ->
   src(['./src/scripts/app/**/*.coffee'])
+    .pipe(sourcemaps.init())
     .pipe(concat('app.coffee'))
     .pipe(coffee())
+    .pipe(minify())
+    .pipe(sourcemaps.write('.'))
     .pipe(dest('./dist/assets/scripts/'))
     .pipe(connect.reload())
 

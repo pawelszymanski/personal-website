@@ -28,8 +28,8 @@ body
     +size($grid * 3, 100%)
     background: $color-bg-navigation
     padding-left: $grid
-    //@if $animations
-    //  animation: revealContent 5s
+    @if $animations
+      animation: revealContent 5s
   #content
     margin-left: $grid * 3
     background: $color-bg-content
@@ -56,6 +56,7 @@ body
       margin-top: ($grid / 5)
     li
       +position-left(relative, -9px)
+      max-width: $grid * 2
       a
         display: block
         +font($font-ibm-plex-sans, 14px, 20px, 400, $color-text-light, no-decoration)
@@ -289,3 +290,28 @@ section#contact
     top: $contact-bg-header-top
   h2
     top: $contact-bg-header-top + $headers-y-offset
+  ul
+    +position-left-top(absolute, $grid, 520px)
+    li
+      &:nth-of-type(2)
+        margin: ($grid) 0 0 $grid
+      &:nth-of-type(3)
+        margin: ($grid) 0 0 ($grid * 2)
+      span
+        display: inline-block
+        &:nth-of-type(1)
+          width: $grid * 2
+          +font($font-ibm-plex-sans, 14px, 20px, 300, $color-highlight-light, uppercase)
+          position: relative
+          &:after
+            +add-content-and-display-block
+            +position-block(absolute, 24px, 0, 0, 0, 1)
+            +add-stripped-background
+            height: 20px
+        &:nth-of-type(2)
+          +font($font-ibm-plex-sans, 18px, 24px, 400, $color-text-light)
+          a
+            +font($font-ibm-plex-sans, 18px, 24px, 400, $color-text-light, no-decoration)
+  cite
+    +position-left-top(absolute, $grid * 8, 522px)
+

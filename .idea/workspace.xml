@@ -11,14 +11,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gulpfile.coffee" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/gulpfile.coffee">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="370">
+              <caret line="52" column="13" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/views/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="803">
-              <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
-              <folding>
-                <element signature="n#section#2;n#div#1;n#body#0;n#html#0;n#!!top" />
-              </folding>
+            <state relative-caret-position="231">
+              <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -26,22 +41,17 @@
       <file leaf-file-name="anchor-scroll-animation.coffee" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/scripts/app/anchor-scroll-animation.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="693">
+              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="parallax.coffee" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/scripts/app/parallax.coffee">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="nav-item-activator.coffee" pinned="false" current-in-tab="true">
+      <file leaf-file-name="nav-item-activator.coffee" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/scripts/app/nav-item-activator.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="16" column="17" lean-forward="true" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+            <state relative-caret-position="399">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
         </entry>
@@ -49,8 +59,8 @@
       <file leaf-file-name="styles.sass" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/styles/styles.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="567">
-              <caret line="69" column="25" selection-start-line="69" selection-start-column="19" selection-end-line="69" selection-end-column="25" />
+            <state relative-caret-position="868">
+              <caret line="315" selection-start-line="315" selection-end-line="315" />
             </state>
           </provider>
         </entry>
@@ -59,8 +69,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>content</find>
-      <find>add-quotation-mark-decorator</find>
       <find>disa</find>
       <find>over</find>
       <find>rotate-bullet-icon</find>
@@ -89,6 +97,8 @@
       <find>scrollSpeed</find>
       <find>bold</find>
       <find>all</find>
+      <find>width</find>
+      <find>cv</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -129,21 +139,21 @@
         <option value="$PROJECT_DIR$/src/script/layer-manager.coffee" />
         <option value="$PROJECT_DIR$/src/app/views/index.html" />
         <option value="$PROJECT_DIR$/src/styles/mixins/font-face.sass" />
-        <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/gulpfile.coffee" />
         <option value="$PROJECT_DIR$/src/styles/mixins.sass" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/views/index.html" />
         <option value="$PROJECT_DIR$/src/scripts/app/navigation-manager.coffee" />
         <option value="$PROJECT_DIR$/src/scripts/app/navigation-controller.coffee" />
         <option value="$PROJECT_DIR$/src/scripts/app/navigation-animation.coffee" />
         <option value="$PROJECT_DIR$/src/scripts/app/layer-manager.coffee" />
         <option value="$PROJECT_DIR$/src/styles/variables.sass" />
-        <option value="$PROJECT_DIR$/src/styles/styles.sass" />
         <option value="$PROJECT_DIR$/src/scripts/app/local-anchor-on-click-animation.coffee" />
-        <option value="$PROJECT_DIR$/src/scripts/app/anchor-scroll-animation.coffee" />
         <option value="$PROJECT_DIR$/src/scripts/app/parallax.coffee" />
         <option value="$PROJECT_DIR$/src/scripts/app/nav-item-activator.coffee" />
+        <option value="$PROJECT_DIR$/src/styles/styles.sass" />
+        <option value="$PROJECT_DIR$/src/views/index.html" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/gulpfile.coffee" />
+        <option value="$PROJECT_DIR$/src/scripts/app/anchor-scroll-animation.coffee" />
       </list>
     </option>
   </component>
@@ -183,6 +193,24 @@
             <path>
               <item name="personal-website" type="b2602c69:ProjectViewProjectNode" />
               <item name="personal-website" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="personal-website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="personal-website" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="personal-website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="personal-website" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="personal-website" type="b2602c69:ProjectViewProjectNode" />
+              <item name="personal-website" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="personal-website" type="b2602c69:ProjectViewProjectNode" />
@@ -306,12 +334,12 @@
       <option name="presentableId" value="Default" />
       <updated>1584379502178</updated>
       <workItem from="1584379506509" duration="44987000" />
-      <workItem from="1584462500322" duration="164100000" />
+      <workItem from="1584462500322" duration="171701000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="164100000" />
+    <option name="totallyTimeSpent" value="171701000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1924" y="-4" width="1928" height="1208" extended-state="6" />
@@ -555,20 +583,6 @@
     <entry file="file://$PROJECT_DIR$/dist/assets/images/pawel_szymanski.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/gulpfile.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="9" lean-forward="true" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -603,37 +617,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/scripts/app/parallax.coffee">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/styles.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="69" column="25" selection-start-line="69" selection-start-column="19" selection-end-line="69" selection-end-column="25" />
+        <state relative-caret-position="868">
+          <caret line="315" selection-start-line="315" selection-end-line="315" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/views/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="803">
-          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+        <state relative-caret-position="231">
+          <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scripts/vendor/jquery-3.4.1.slim.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="8468" column="30" lean-forward="true" selection-start-line="8468" selection-start-column="30" selection-end-line="8468" selection-end-column="30" />
           <folding>
-            <element signature="n#section#2;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/scripts/app/anchor-scroll-animation.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="693">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/scripts/app/parallax.coffee">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/scripts/app/nav-item-activator.coffee">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="17" lean-forward="true" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+        <state relative-caret-position="399">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="52" column="13" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
         </state>
       </provider>
     </entry>
