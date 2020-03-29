@@ -5,7 +5,7 @@
 @import tags
 
 
-@keyframes reveal
+@keyframes revealContent
   from
     width: 100%
     background: white
@@ -28,7 +28,8 @@ body
     +size($grid * 3, 100%)
     background: $color-bg-navigation
     padding-left: $grid
-    animation: reveal 5s
+    //@if $animations
+    //  animation: revealContent 5s
   #content
     margin-left: $grid * 3
     background: $color-bg-content
@@ -93,11 +94,17 @@ body
       z-index: 1
 
 
+@keyframes rotateButton
+  from
+    transform: rotate(-90deg)
+  to
+    transform: rotate(0deg)
 
 $intro-bg-header-top: 247px
 section#intro
   h4
     top: $intro-bg-header-top
+    max-width: 900px
     &:after
       +add-content-and-display-block
       +size(2400px, 36px)
@@ -105,9 +112,35 @@ section#intro
       margin: ($grid / 2) 0 ($grid * 3 / 2) ($grid * 8 - $grid / 4)
   h2
     top: $intro-bg-header-top + $headers-y-offset
+    max-width: 940px
   cite
     +position-left-top(absolute, $grid * 8, $intro-bg-header-top - 80px)
-
+    max-width: 260px
+  a
+    display: block
+    +position-left-top(absolute, 113px, $intro-bg-header-top + 480px)
+    +font($font-ibm-plex-mono, 16px, 20px, 900, $color-bg-content, uppercase, no-decoration)
+    background: $color-highlight-light
+    letter-spacing: 8px
+    transform: rotate(-90deg)
+    transform-origin: 0 0
+    padding: 0 2px 0 10px
+    cursor: pointer
+    &:before, &:after
+      +add-content-and-display-block
+      background: $color-highlight-light
+      transform: rotate(-45deg)
+    &:before
+      transform: rotate(-45deg)
+      +position-left-top(absolute, 10px, -40px, -1)
+      +size(1px, 100px)
+      background: $color-highlight-light
+      opacity: .5
+    &:after
+      transform: rotate(-45deg)
+      +position-left-top(absolute, 44px, 40px, -1)
+      +size(3px, 10px)
+      background: $color-highlight-light
 
 
 $summary-bg-header-top: $bg-header-top-base + $nav-item-y-size
