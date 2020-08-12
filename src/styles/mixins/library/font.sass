@@ -1,0 +1,60 @@
+@mixin font($arg-1, $arg-2: '', $arg-3: '', $arg-4: '', $arg-5: '', $arg-6: '', $arg-7: '', $arg-8: '', $arg-9: '', $arg-10: '', $arg-11: '', $arg-12: '', $arg-13: '', $arg-14: '', $arg-15: '')
+
+  $numbers-in-mixin: 0
+  $font-family: ''
+  $fonts-count: 0
+  @each $arg in $arg-1, $arg-2, $arg-3, $arg-4, $arg-5, $arg-6, $arg-7, $arg-8, $arg-9, $arg-10, $arg-11, $arg-12, $arg-13, $arg-14, $arg-15
+
+    @if type-of($arg) == color
+      color: $arg
+
+    @if type-of($arg) == number
+      @if $numbers-in-mixin == 0
+        font-size: $arg
+      @if $numbers-in-mixin == 1
+        line-height: $arg
+      @if $numbers-in-mixin == 2
+        font-weight: $arg
+      $numbers-in-mixin: $numbers-in-mixin + 1
+
+    @if type-of($arg) == string
+      $property: ''
+      @if $arg != ''
+
+        @if $arg == 'pre' or $arg == 'no-wrap'
+          white-space: $arg
+          $property: 'white-space'
+
+        @if $arg == 'italic' or $arg == 'oblique'
+          font-style: $arg
+          $property: 'style'
+        @if $arg == 'no-style'
+          font-style: normal
+          $property: 'style'
+
+        @if $arg == 'left' or $arg == 'right' or $arg == 'center' or $arg == 'justyfy'
+          text-align: $arg
+          $property: 'align'
+
+        @if $arg == 'underline' or $arg == 'overline' or $arg == 'line-through' or $arg == 'blink'
+          text-decoration: $arg
+          $property: 'decoration'
+        @if $arg == 'no-decoration'
+          text-decoration: none
+          $property: 'decoration'
+
+        @if $arg == 'capitalize' or $arg == 'uppercase' or $arg == 'lowercase'
+          text-transform: $arg
+          $property: 'transform'
+        @if $arg == 'no-transform'
+          text-transform: none
+          $property: 'transform'
+
+        @if $property != 'white-space' and $property != 'style' and $property != 'align' and $property != 'decoration' and $property != 'transform'
+          @if $fonts-count > 0
+            $font-family: $font-family + ', '
+          $font-family: $font-family + "'" + $arg + "'"
+          $fonts-count : $fonts-count + 1
+
+  @if $fonts-count > 0
+    font-family: #{$font-family}

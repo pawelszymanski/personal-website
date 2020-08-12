@@ -1,0 +1,8 @@
+$webfonts_path: '/assets/webfonts/'
+
+@mixin font-face($font_family, $file_name)
+  @font-face
+    font-family: '#{$font_family}'
+    src: url('#{$webfonts_path}#{$file_name}.ttf') format('truetype')
+    font-weight: normal
+    font-style: normal

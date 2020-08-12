@@ -1,313 +1,118 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="4556294b-897b-4bd4-bbe0-e09f56dc25bf" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
+    <list default="true" id="4556294b-897b-4bd4-bbe0-e09f56dc25bf" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Pawel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Pawel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_TODO.TXT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/face.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/face.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/pawel_szymanski.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/stripes.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/app/anchor-scroll-animation.coffee" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/app/local-navigation-controller.coffee" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/app/nav-item-activator.coffee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/app/parallax.coffee" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/app/parallax.coffee" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/helpers.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/mixins.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/mixins.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/mixins/clearfix.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/mixins/library/clearfix.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/mixins/disable-selection.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/mixins/library/disable-selection.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/mixins/font-face.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/mixins/library/font-face.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/mixins/font.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/mixins/library/font.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/mixins/gradient-radial.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/mixins/library/gradient-radial.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/mixins/position-block.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/mixins/library/position-block.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/mixins/position.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/mixins/library/position.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/mixins/size.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/mixins/library/size.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/styles.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/styles.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/variables.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/variables.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="gulpfile.coffee" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/gulpfile.coffee">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="52" column="13" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/views/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="anchor-scroll-animation.coffee" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/scripts/app/anchor-scroll-animation.coffee">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="693">
-              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nav-item-activator.coffee" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/scripts/app/nav-item-activator.coffee">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="styles.sass" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/styles/styles.sass">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="868">
-              <caret line="315" selection-start-line="315" selection-end-line="315" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>disa</find>
-      <find>over</find>
-      <find>rotate-bullet-icon</find>
-      <find>cite</find>
-      <find>$font-ibm-plex-sans</find>
-      <find>1000</find>
-      <find>font</find>
-      <find>($font-ibm-plex-sans, 14px, 20px, 300, $color-text-light)</find>
-      <find>li</find>
-      <find>h5</find>
-      <find>LAYERS</find>
-      <find>no</find>
-      <find>gulp.</find>
-      <find>src</find>
-      <find>./src/views/index.html</find>
-      <find>livereload</find>
-      <find>gulp.dest</find>
-      <find>gulp.parallel</find>
-      <find>gulp.series</find>
-      <find>liveReload</find>
-      <find>CONNECT</find>
-      <find>element</find>
-      <find>elements</find>
-      <find>styles</find>
-      <find>forEach</find>
-      <find>scrollSpeed</find>
-      <find>bold</find>
-      <find>all</find>
-      <find>width</find>
-      <find>cv</find>
-    </findStrings>
-    <replaceStrings>
-      <replace />
-      <replace>gulp.src</replace>
-      <replace>liveReload</replace>
-      <replace>dest</replace>
-      <replace>parallel</replace>
-      <replace>series</replace>
-      <replace>speed</replace>
-    </replaceStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/styles/mixins/gradient-radial.sass" />
-        <option value="$PROJECT_DIR$/src/styles/helpers.sass" />
-        <option value="$PROJECT_DIR$/src/styles/mixins/disable-selection.sass" />
-        <option value="$PROJECT_DIR$/src/styles/elements/cite.sass" />
-        <option value="$PROJECT_DIR$/src/styles/tags.sass" />
-        <option value="$PROJECT_DIR$/src/styles/mixins/font.sass" />
-        <option value="$PROJECT_DIR$/src/temp" />
-        <option value="$PROJECT_DIR$/src/styles/tags/cite.sass" />
-        <option value="$PROJECT_DIR$/src/styles/reset.sass" />
-        <option value="$PROJECT_DIR$/src/scripts/test.coffee" />
-        <option value="$PROJECT_DIR$/src/app.js" />
-        <option value="$PROJECT_DIR$/src/index.html" />
-        <option value="$PROJECT_DIR$/src/_TODO.TXT" />
-        <option value="$PROJECT_DIR$/src/assets/scripts/navigation-namager.coffee" />
-        <option value="$PROJECT_DIR$/src/assets/scripts/layout-manager.coffee" />
-        <option value="$PROJECT_DIR$/src/assets/scripts/layer-animator.coffee" />
-        <option value="$PROJECT_DIR$/src/app/app.module.ts" />
-        <option value="$PROJECT_DIR$/src/styles.sass" />
-        <option value="$PROJECT_DIR$/src/assets/scripts/app.js" />
-        <option value="$PROJECT_DIR$/src/script/navigation-manager.coffee" />
-        <option value="$PROJECT_DIR$/src/script/layer-manager.coffee" />
-        <option value="$PROJECT_DIR$/src/app/views/index.html" />
-        <option value="$PROJECT_DIR$/src/styles/mixins/font-face.sass" />
-        <option value="$PROJECT_DIR$/src/styles/mixins.sass" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/scripts/app/navigation-manager.coffee" />
-        <option value="$PROJECT_DIR$/src/scripts/app/navigation-controller.coffee" />
-        <option value="$PROJECT_DIR$/src/scripts/app/navigation-animation.coffee" />
-        <option value="$PROJECT_DIR$/src/scripts/app/layer-manager.coffee" />
-        <option value="$PROJECT_DIR$/src/styles/variables.sass" />
-        <option value="$PROJECT_DIR$/src/scripts/app/local-anchor-on-click-animation.coffee" />
-        <option value="$PROJECT_DIR$/src/scripts/app/parallax.coffee" />
-        <option value="$PROJECT_DIR$/src/scripts/app/nav-item-activator.coffee" />
-        <option value="$PROJECT_DIR$/src/styles/styles.sass" />
-        <option value="$PROJECT_DIR$/src/views/index.html" />
-        <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/gulpfile.coffee" />
-        <option value="$PROJECT_DIR$/src/scripts/app/anchor-scroll-animation.coffee" />
-      </list>
-    </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
-    <package-json value="$PROJECT_DIR$/package.json" />
-  </component>
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/node_modules" />
-  </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths>
-      <path value="$PROJECT_DIR$/package.json" />
-    </packageJsonPaths>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1924" />
-    <option name="y" value="-4" />
-    <option name="width" value="1928" />
-    <option name="height" value="1164" />
-  </component>
   <component name="ProjectId" id="1ZDhJeBwLOTpEuVOsLuj6ppPRcZ" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="personal-website" type="b2602c69:ProjectViewProjectNode" />
-              <item name="personal-website" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="personal-website" type="b2602c69:ProjectViewProjectNode" />
-              <item name="personal-website" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="personal-website" type="b2602c69:ProjectViewProjectNode" />
-              <item name="personal-website" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="personal-website" type="b2602c69:ProjectViewProjectNode" />
-              <item name="personal-website" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="personal-website" type="b2602c69:ProjectViewProjectNode" />
-              <item name="personal-website" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="personal-website" type="b2602c69:ProjectViewProjectNode" />
-              <item name="personal-website" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="personal-website" type="b2602c69:ProjectViewProjectNode" />
-              <item name="personal-website" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="personal-website" type="b2602c69:ProjectViewProjectNode" />
-              <item name="personal-website" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="personal-website" type="b2602c69:ProjectViewProjectNode" />
-              <item name="personal-website" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets/icons" />
+    <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.prettier" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.prettier" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.prettier" value="" />
     <property name="node.js.selected.package.tslint" value="C:\dev\personal-website\node_modules\tslint" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.TypeScript" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
     <property name="typescript-compiler-editor-notification" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\dev\personal-website\src" />
-      <recent name="C:\dev\personal-website\src\app\scripts\app" />
-      <recent name="C:\dev\personal-website\src\app" />
-      <recent name="C:\dev\personal-website\src\styles" />
-      <recent name="C:\dev\personal-website\src\styles\tags" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\dev\personal-website\src\assets\icons" />
       <recent name="C:\dev\personal-website\src\scripts\app" />
+      <recent name="C:\dev\personal-website\src\assets\images" />
       <recent name="C:\dev\personal-website\src\assets\favicon" />
       <recent name="C:\dev\personal-website\src\styles" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\dev\personal-website\src\assets\images" />
+      <recent name="C:\dev\personal-website\src\assets\icons" />
+      <recent name="C:\dev\personal-website\src\styles\mixins\library" />
+      <recent name="C:\dev\personal-website\src" />
+      <recent name="C:\dev\personal-website\src\app\scripts\app" />
+    </key>
   </component>
   <component name="RunManager" selected="npm.Angular CLI Server">
-    <configuration name="Tests (personal-website)" type="JavaScriptTestRunnerKarma" factoryName="Karma">
+    <configuration name="Tests (personal-website)" type="JavaScriptTestRunnerKarma">
       <config-file value="$PROJECT_DIR$/karma.conf.js" />
       <node-interpreter value="project" />
       <envs />
+      <method v="2" />
     </configuration>
-    <configuration name="E2E Tests (personal-website)" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+    <configuration name="E2E Tests (personal-website)" type="JavaScriptTestRunnerProtractor">
       <config-file value="$PROJECT_DIR$/e2e/protractor.conf.js" />
       <node-interpreter value="project" />
+      <protractor-options value="" />
       <envs />
+      <scope-kind value="ALL" />
+      <method v="2" />
     </configuration>
-    <configuration name="Angular Application" type="JavascriptDebugType" factoryName="JavaScript Debug" uri="http://localhost:4200" />
-    <configuration name="Angular CLI Server" type="js.build_tools.npm" factoryName="npm">
+    <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular CLI Server" type="js.build_tools.npm">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
@@ -315,12 +120,13 @@
       </scripts>
       <node-interpreter value="project" />
       <envs />
+      <method v="2" />
     </configuration>
     <list>
       <item itemvalue="JavaScript Debug.Angular Application" />
       <item itemvalue="Karma.Tests (personal-website)" />
-      <item itemvalue="Protractor.E2E Tests (personal-website)" />
       <item itemvalue="npm.Angular CLI Server" />
+      <item itemvalue="Protractor.E2E Tests (personal-website)" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -334,343 +140,63 @@
       <option name="presentableId" value="Default" />
       <updated>1584379502178</updated>
       <workItem from="1584379506509" duration="44987000" />
-      <workItem from="1584462500322" duration="171701000" />
+      <workItem from="1584462500322" duration="172305000" />
+      <workItem from="1585510903708" duration="20000" />
+      <workItem from="1585516120566" duration="198000" />
+      <workItem from="1585607596855" duration="1199000" />
+      <workItem from="1591096382045" duration="52000" />
+      <workItem from="1592130555768" duration="3105000" />
+      <workItem from="1592487436678" duration="152000" />
+      <workItem from="1595179778745" duration="1853000" />
+      <workItem from="1595247200141" duration="12000" />
+      <workItem from="1595249125710" duration="9000" />
+      <workItem from="1596577510622" duration="297000" />
+      <workItem from="1597073300766" duration="65781000" />
     </task>
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="171701000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-1924" y="-4" width="1928" height="1208" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info id="npm" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="TypeScript" weight="0.32971996" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.259375" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.31616983" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-    </layout>
-    <layout-to-restore>
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
-      <window_info id="npm" order="0" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="7" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.27395833" />
-      <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="11" />
-      <window_info anchor="bottom" id="TypeScript" order="1" weight="0.32971996" />
-      <window_info anchor="bottom" id="Find" order="6" weight="0.32925683" />
-      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
-      <window_info anchor="bottom" id="Terminal" order="2" />
-      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="4" />
-      <window_info anchor="bottom" id="Message" order="5" />
-      <window_info id="Favorites" order="1" side_tool="true" />
-    </layout-to-restore>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="487" y="214" key="SettingsEditor" timestamp="1584380372483">
-      <screen x="0" y="0" width="1920" height="1156" />
+    <state x="-1216" y="296" key="#Images" timestamp="1597077426425">
+      <screen x="-1920" y="0" width="1920" height="1200" />
     </state>
-    <state x="487" y="214" key="SettingsEditor/0.0.1920.1156/-1920.0.1920.1200/1920.0.1920.1080@0.0.1920.1156" timestamp="1584380372483" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/styles/mixins/gradient-radial.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="22" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/mixins/disable-selection.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="24" selection-start-column="7" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/mixins/position-block.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="7" selection-start-column="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/tags/cite.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/sass/lib/sass.jar!/org/jetbrains/plugins/sass/stdlib/sass_functions.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="268" column="24" selection-start-line="268" selection-start-column="10" selection-end-line="268" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tsconfig.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/z-src/main.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/scripts/test.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="18" lean-forward="true" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="62" selection-start-line="1" selection-start-column="62" selection-end-line="1" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tslint.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/assets/scripts/navigation-namager.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/assets/scripts/layer-animator.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/personal-website/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
-          <caret line="31" column="19" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_TODO.TXT">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1029">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.editorconfig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/z-src/app/app.component.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/z-src/app/app.component.sass">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/z-src/app/app.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/z-src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/z-src/app/app-routing.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="11" lean-forward="true" selection-end-line="5" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/assets/scripts/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="35" column="15" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/tags.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/styles/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/scripts/app.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/reset.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/helpers.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/mixins/font-face.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="25" selection-start-column="18" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/assets/images/pawel_szymanski.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Download CV.url">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/mixins.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/mixins/font.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/scripts/vendor/jquery-3.4.1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="7508" column="46" lean-forward="true" selection-start-line="7508" selection-start-column="46" selection-end-line="7508" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/variables.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="17" selection-start-column="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/scripts/app/parallax.coffee">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/styles.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="868">
-          <caret line="315" selection-start-line="315" selection-end-line="315" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/scripts/vendor/jquery-3.4.1.slim.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="8468" column="30" lean-forward="true" selection-start-line="8468" selection-start-column="30" selection-end-line="8468" selection-end-column="30" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/scripts/app/anchor-scroll-animation.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/scripts/app/nav-item-activator.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gulpfile.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="52" column="13" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <state x="-1216" y="296" key="#Images/0.0.1920.1160/-1920.0.1920.1200/1920.0.1280.720@-1920.0.1920.1200" timestamp="1597077426425" />
+    <state x="-1334" y="278" key="#Inspections" timestamp="1597077210239">
+      <screen x="-1920" y="0" width="1920" height="1200" />
+    </state>
+    <state x="-1334" y="278" key="#Inspections/0.0.1920.1160/-1920.0.1920.1200/1920.0.1280.720@-1920.0.1920.1200" timestamp="1597077210239" />
+    <state x="-1245" y="402" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597199484117">
+      <screen x="-1920" y="0" width="1920" height="1200" />
+    </state>
+    <state x="-1245" y="402" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1160/-1920.0.1920.1200/1920.0.1280.720@-1920.0.1920.1200" timestamp="1597199484117" />
+    <state x="-1180" y="355" key="FileChooserDialogImpl" timestamp="1595249132136">
+      <screen x="-1920" y="0" width="1920" height="1200" />
+    </state>
+    <state x="-1180" y="355" key="FileChooserDialogImpl/0.0.1920.1160/-1920.0.1920.1200@-1920.0.1920.1200" timestamp="1595249132136" />
+    <state x="-1151" y="514" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597180355221">
+      <screen x="-1920" y="0" width="1920" height="1200" />
+    </state>
+    <state x="-1151" y="514" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1160/-1920.0.1920.1200/1920.0.1280.720@-1920.0.1920.1200" timestamp="1597180355221" />
+    <state x="-1253" y="333" width="585" height="534" key="find.popup" timestamp="1597092748139">
+      <screen x="-1920" y="0" width="1920" height="1200" />
+    </state>
+    <state x="-1253" y="333" width="585" height="534" key="find.popup/0.0.1920.1160/-1920.0.1920.1200/1920.0.1280.720@-1920.0.1920.1200" timestamp="1597092748139" />
+    <state width="600" height="428" key="javadoc.popup" timestamp="1597180327490">
+      <screen x="-1920" y="0" width="1920" height="1200" />
+    </state>
+    <state width="600" height="428" key="javadoc.popup/0.0.1920.1160/-1920.0.1920.1200/1920.0.1280.720@-1920.0.1920.1200" timestamp="1597180327490" />
   </component>
 </project>

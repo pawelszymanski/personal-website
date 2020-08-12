@@ -1,0 +1,17 @@
+@import '../../variables'
+
+@mixin add-bullet($bullet-length)
+  position: relative
+  &:before, &:after
+    +add-content-and-display-block
+    background: $color-highlight-light
+  &:before
+    +position-left-top(absolute, -10px -$bullet-length, 12px)
+    +size($bullet-length, 1px)
+    opacity: 0.33
+  &:after
+    +position-left-top(absolute, -15px, 11px)
+    +size(3px, 1px)
+    border: 1px solid $color-highlight-light
+    border-radius: 1px
+    opacity: 0.66

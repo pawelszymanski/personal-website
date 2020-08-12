@@ -33,8 +33,8 @@
   <div id="content">
     <a name="intro"></a>
     <section id="intro">
-      <h4>web developer</h4>
-      <h2>I develop functional and<br/>
+      <h4>Web developer</h4>
+      <h2>I develop functional yet<br/>
         beautiful web applications<br/>
         using modern technical stack
       </h2>
@@ -44,7 +44,7 @@
         code that implements a great<br/>
         UX and UI design.<br/>
       </cite>
-      <a href="#summary">See more</a>
+      <a href="#summary" add-active-class-on-click>See more</a>
     </section>
 
     <a name="summary"></a>
@@ -73,7 +73,10 @@
           <li>rich entrepreneur, business and marketing experience</li>
         </ul>
       </div>
-      <img src="../assets/images/pawel_szymanski.png">
+      <div class="photo"></div>
+      <cite>
+        I dwell in widgets, CSS and pixel perfect design. I feel great in heavy duty Javascript development too.
+      </cite>
     </section>
 
     <a name="proficiencies"></a>
@@ -141,26 +144,26 @@
       </h3>
       <div>
         <h5>Principles</h5>
-        <h6>Maybe write here a line?</h6>
-        <ul>
-          <li><em>design:</em> it is a design makes products great, code is just a mean to acheve the design</li>
-          <li><em>simplicity:</em> know your craft, use the subset of tools you really need thou</li>
-          <li><em>semantic, self-documented:</em> give things proper names, be descriptive</li>
+        <h6></h6>
+        <ul class="principles-list">
+          <li><em>design:</em> it is the design that makes products great, code is just a tool to achieve it</li>
+          <li><em>simplicity:</em> know your craft, don't overcomplicate your solution thou</li>
+          <li><em>semantic, self-documented:</em> code will be read hundreds of times, names have to be meaningful</li>
         </ul>
       </div>
       <div>
         <h5>Design</h5>
         <h6>makes you develop better products faster</h6>
         <ul>
-          <li>the trend is obvious: <a href="xxx">designers to programmers ratio changes</a></li>
-          <li>designing products is faster and less expensive than...</li>
+          <li>the trend is obvious: <a target="_blank" href="https://techcrunch.com/2017/05/31/here-are-some-reasons-behind-techs-design-shortage">designers to programmers ratio changes</a></li>
+          <li>testing and fixing the design is always faster and less expensive than fixing code</li>
         </ul>
       </div>
       <div>
         <h5>Simple code</h5>
-        <h6>gives a lot of benefits</h6>
+        <h6>saves money (and headaches)</h6>
         <ul>
-          <li>the less code you write the less bugs yuo make</li>
+          <li>the less code you write the less bugs you make</li>
           <li>the simpler code you write on the easier is te read it hundreds of times</li>
           <li>less code means it's easier to make changes and pivot the project</li>
           <li>low complexity in codebase lets new developers be productive sooner</li>
@@ -173,18 +176,89 @@
     <section id="tech-stack">
       <h4>tech stack</h4>
       <h2>Tech stack of choice</h2>
+      <ul class="tab-list">
+        <li>Personal / PoC</li>
+        <li>Corporate</li>
+      </ul>
+      <div class="tab-content">
+        <ul>
+          <li>AngularJS, jQuery</li>
+          <li>Coffeescript</li>
+          <li>HTML</li>
+          <li>SASS</li>
+          <li>Gulp</li>
+        </ul>
+        <h3>Well established yet simple. This stack builds and runs tests within fraction of a second enabling developer to iterate quickly.</h3>
+        <p>Great for PoCs and small projects since it has minimal amount of the boilerplate code.</p>
+      </div>
+      <div class="tab-content">
+        <ul>
+          <li>Angular, RxJS</li>
+          <li>Typescript</li>
+          <li>HTML</li>
+          <li>SCSS</li>
+          <li>Webpack</li>
+        </ul>
+        <h3>Robust stack with excellent scalability. Comes with the price of slower pace of the development.</h3>
+        <p>Intended for bigger teams and projects.</p>
+      </div>
+
     </section>
 
     <a name="personality"></a>
     <section id="personality">
       <h4>personality</h4>
       <h2>Personality</h2>
+      <svg class="chart">
+        <circle cx="210" cy="210" r="20" stroke="#153e2e" stroke-width="1" fill="transparent"/>
+        <circle cx="210" cy="210" r="40" stroke="#153e2e" stroke-width="1" fill="transparent"/>
+        <circle cx="210" cy="210" r="60" stroke="#153e2e" stroke-width="1" fill="transparent"/>
+        <circle cx="210" cy="210" r="80" stroke="#153e2e" stroke-width="1" fill="transparent"/>
+        <circle cx="210" cy="210" r="100" stroke="#153e2e" stroke-width="1" fill="transparent"/>
+        <circle cx="210" cy="210" r="120" stroke="#153e2e" stroke-width="1" fill="transparent"/>
+        <circle cx="210" cy="210" r="140" stroke="#153e2e" stroke-width="1" fill="transparent"/>
+        <circle cx="210" cy="210" r="160" stroke="#153e2e" stroke-width="1" fill="transparent"/>
+        <circle cx="210" cy="210" r="180" stroke="#153e2e" stroke-width="1" fill="transparent"/>
+        <circle cx="210" cy="210" r="200" stroke="#153e2e" stroke-width="1" fill="transparent"/>
+        <line x1="10" y1="210" x2="190" y2="210" stroke="#00f17c" stroke-width="2"/>
+        <line x1="210" y1="10" x2="210" y2="190" stroke="#00f17c" stroke-width="2"/>
+        <line x1="230" y1="210" x2="410" y2="210" stroke="#00f17c" stroke-width="2"/>
+        <line x1="210" y1="230" x2="210" y2="410" stroke="#00f17c" stroke-width="2"/>
+        <line x1="16" y1="210" x2="210" y2="10" stroke="white" stroke-width="5"/>
+        <line x1="210" y1="10" x2="292" y2="210" stroke="white" stroke-width="5"/>
+        <line x1="292" y1="210" x2="210" y2="230" stroke="white" stroke-width="5"/>
+        <line x1="210" y1="230" x2="16" y2="210" stroke="white" stroke-width="5"/>
+        <circle cx="16" cy="210" r="6" stroke-width="0" fill="white"/>
+        <circle cx="210" cy="10" r="6" stroke-width="0" fill="white"/>
+        <circle cx="292" cy="210" r="6" stroke-width="0" fill="white"/>
+        <circle cx="210" cy="230" r="6" stroke-width="0" fill="white"/>
+        <circle cx="16" cy="210" r="4" stroke-width="0" fill="black"/>
+        <circle cx="210" cy="10" r="4" stroke-width="0" fill="black"/>
+        <circle cx="292" cy="210" r="4" stroke-width="0" fill="black"/>
+        <circle cx="210" cy="230" r="4" stroke-width="0" fill="black"/>
+        <circle cx="16" cy="210" r="2" stroke-width="0" fill="#00f17c"/>
+        <circle cx="210" cy="10" r="2" stroke-width="0" fill="#00f17c"/>
+        <circle cx="292" cy="210" r="2" stroke-width="0" fill="#00f17c"/>
+        <circle cx="210" cy="230" r="2" stroke-width="0" fill="#00f17c"/>
+      </svg>
+      <p class="legend-will">Will 10.0</p>
+      <p class="legend-control">Control 4.1</p>
+      <p class="legend-affection">Affection 1.0</p>
+      <p class="legend-energy">Energy 9.7</p>
+      <h5>What do my traits mean?</h5>
+      <ul class="description">
+        <li>Seen as dominant, determined, committed and independent. The key is a strong motivation based on firmly held beliefs. Characteristics are firmness, single-mindedness and goal direction.</li>
+        <li>Seen as energetic, alert, active and enthusiastic. They are gregarious, competitive, fun loving and sociable. They are optimistic and excited about new ventures.</li>
+        <li>Seen as more pragmatic and business-like. They are quick to seize opportunities and take advantage. They take decisions quickly and don't get confused by alternatives.</li>
+        <li>Seen as are more easy going and laid back. They tend to live for the moment and take things as they come. They are uncritical and liberal in their views.</li>
+      </ul>
+
     </section>
 
     <a name="contact"></a>
     <section id="contact">
-      <h4>contact</h4>
-      <h2>Contact</h2>
+      <h4>cont<span>r</span>act</h4>
+      <h2>Cont<span>r</span>act</h2>
       <ul>
         <li>
           <span>Phone</span>
@@ -192,7 +266,7 @@
         </li>
         <li>
           <span>Email</span>
-          <span><a href="mailto:pawel@emention.pl">pawel@emention.pl</a></span>
+          <span><a href="mailto:pawel.szymanski@emention.pl">pawel.szymanski@emention.pl</a></span>
         </li>
         <li>
           <span>Skype</span>

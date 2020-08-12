@@ -29,16 +29,18 @@ class Parallax
           layer.cssCallbacks.forEach (cb) =>
             element.$el.css cb.property, cb.fn(offset)
 
+  initWindowScrollEvent: =>
+    $(window).on 'scroll', =>
+      clearTimeout(@timer)
+      @timer = setTimeout(@repositionElements, @throttle)
+
   constructor: ->
     @initElements()
     @repositionElements()
 
     @timer = null
     @throttle = 0
-
-    $(window).on 'scroll', =>
-      clearTimeout(@timer)
-      @timer = setTimeout(@repositionElements, @throttle)
+    @initWindowScrollEvent()
 
 
 

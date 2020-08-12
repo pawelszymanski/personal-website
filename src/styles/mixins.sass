@@ -1,42 +1,13 @@
-@import mixins/clearfix
-@import mixins/disable-selection
-@import mixins/font
-@import mixins/font-face
-@import mixins/gradient-radial
-@import mixins/position
-@import mixins/position-block
-@import mixins/size
+@import mixins/library/clearfix
+@import mixins/library/disable-selection
+@import mixins/library/font
+@import mixins/library/font-face
+@import mixins/library/gradient-radial
+@import mixins/library/position
+@import mixins/library/position-block
+@import mixins/library/size
 
-@import variables
-
-
-
-@mixin add-stripped-background
-  background: url('/assets/images/stripes.png') repeat-x
-  opacity: .5
-
-@mixin add-content-and-display-block
-  content: ''
-  display: block
-
-@mixin add-content-and-display-inline-block
-  content: ''
-  display: inline-block
-
-@mixin abstract-bullet
-
-@mixin add-bullet($bullet-length)
-  position: relative
-  &:before, &:after
-    +add-content-and-display-block
-    background: $color-highlight-light
-  &:before
-    +position-left-top(absolute, -10px -$bullet-length, 12px)
-    +size($bullet-length, 1px)
-    opacity: 0.33
-  &:after
-    +position-left-top(absolute, -15px, 11px)
-    +size(3px, 1px)
-    border: 1px solid $color-highlight-light
-    border-radius: 1px
-    opacity: 0.66
+@import mixins/specific/add-content-and-display-block
+@import mixins/specific/add-content-and-display-inline-block
+@import mixins/specific/add-bullet
+@import mixins/specific/add-stripped-background

@@ -1,0 +1,5 @@
+// $gradient-to-stop: 60% means gradient will be contained, with more might be cut off
+@mixin gradient-radial($gradient-from-color, $gradient-to-color, $gradient-to-stop: 60%)
+  background: radial-gradient(ellipse at center, $gradient-from-color 0%, $gradient-to-color $gradient-to-stop)
+  background: -moz-radial-gradient(center, ellipse cover, $gradient-from-color 0%, $gradient-to-color $gradient-to-stop)
+  background: -webkit-radial-gradient(center, ellipse cover, $gradient-from-color 0%, $gradient-to-color $gradient-to-stop)
