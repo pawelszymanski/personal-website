@@ -369,6 +369,7 @@ section#personality
   h2
     top: $personality-bg-header-top + $headers-y-offset
   .chart
+    display: inline-block
     +position-left-top(absolute, ($grid), $personality-bg-header-top + 240px)
     +size(420px)
   .legend-will,
@@ -381,13 +382,13 @@ section#personality
     &:first-line
       color: $color-text-light
   .legend-will
-    +position-left-top(absolute, $grid + 208px , $personality-bg-header-top + 194px)
+    +position-left-top(absolute, $grid + 204px , $personality-bg-header-top + 194px)
   .legend-control
     +position-left-top(absolute, $grid + 424px, $personality-bg-header-top + 440px)
   .legend-affection
-    +position-left-top(absolute, $grid + 208px, $personality-bg-header-top + 660px)
+    +position-left-top(absolute, $grid + 204px, $personality-bg-header-top + 660px)
   .legend-energy
-    +position-left-top(absolute, $grid - 56px, $personality-bg-header-top + 440px)
+    +position-left-top(absolute, $grid - 64px, $personality-bg-header-top + 440px)
   h5
     +position-left-top(absolute, $grid * 7.5, 500px)
     &:after
