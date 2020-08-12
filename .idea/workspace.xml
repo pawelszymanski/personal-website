@@ -20,18 +20,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4556294b-897b-4bd4-bbe0-e09f56dc25bf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/animations.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_animations.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/animations/block-scrolling.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/animations/block-scrolling.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/animations/rotate.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/animations/rotate.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/animations/shrink-navigation-column.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/animations/shrink-navigation-column.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/mixins.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_mixins.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/mixins/library/gradient-radial.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/mixins/specific/add-stripped-background.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/mixins/specific/add-stripped-background.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/reset.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_reset.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/styles.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/styles.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/tags.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_tags.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/variables.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_variables.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +41,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets/icons" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets/docs" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.prettier" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -70,11 +58,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\dev\personal-website\src\assets\docs" />
       <recent name="C:\dev\personal-website\src\assets\icons" />
       <recent name="C:\dev\personal-website\src\scripts\app" />
       <recent name="C:\dev\personal-website\src\assets\images" />
       <recent name="C:\dev\personal-website\src\assets\favicon" />
-      <recent name="C:\dev\personal-website\src\styles" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\dev\personal-website\src\assets\images" />
@@ -141,7 +129,7 @@
       <workItem from="1595247200141" duration="12000" />
       <workItem from="1595249125710" duration="9000" />
       <workItem from="1596577510622" duration="297000" />
-      <workItem from="1597073300766" duration="73929000" />
+      <workItem from="1597073300766" duration="75153000" />
     </task>
     <servers />
   </component>
