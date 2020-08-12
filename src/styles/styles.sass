@@ -93,7 +93,7 @@ section#intro
     max-width: 900px
     &:after
       +add-content-and-display-block
-      +size(2400px, 36px)
+      +size(2400px, 30px)
       +add-stripped-background
       margin: ($grid / 2) 0 ($grid * 3 / 2) ($grid * 8 - $grid / 4)
   h2
@@ -146,14 +146,14 @@ section#summary
       &:before
         +add-content-and-display-block
         +position-left-top(absolute, -$grid * 2, 5px)
-        +size(80px, 20px)
+        +size(90px, 30px)
         +add-stripped-background
     p
-      margin-top: 8px
+      margin-top: 12px
       &:last-of-type
-        margin-bottom: 25px
+        margin-bottom: 32px
   .photo
-    +position-left-top(absolute, $grid * 8, $summary-bg-header-top + 198px)
+    +position-left-top(absolute, $grid * 8, $summary-bg-header-top + 211px)
     width: 182px // $grid * 2
     height: 222px
     border: 1px solid black
@@ -166,10 +166,11 @@ section#summary
   ul
     margin-top: 8px
     li
-      line-height: 22px
-      +add-bullet($grid * 2 / 3)
+      +add-bullet($grid / 2)
+      line-height: 20px
+      margin-bottom: 4px
   cite
-    +position-left-top(absolute, $grid * 2, 740px)
+    +position-left-top(absolute, $grid * 2, 790px)
     width: 440px
 
 
@@ -240,17 +241,22 @@ section#beliefs
     +font($font-ibm-plex-sans, 24px, 36px, 300, $color-text-light)
   div
     h6
-      margin-bottom: 8px
+      margin-bottom: 12px
     ul.principles-list
       li
         margin-bottom: 2px
+        em
+          display: inline-block
+          border-bottom: 1px dashed fade-out($color-highlight-light, .75)
+          margin-right: 2px
     a
       text-decoration: none
       color: $color-text-light
       padding-bottom: 1px
-      border-bottom: 1px dashed $color-highlight-light
+      border-bottom: 1px dashed fade-out($color-highlight-light, .5)
       &:hover
-        border-style: solid
+        background: fade-out($color-highlight-light, .9)
+        border-color: fade-out($color-highlight-light, .4)
     &:nth-of-type(1)
       +position-left-top(absolute, $grid, 520px)
     &:nth-of-type(2)
@@ -259,12 +265,14 @@ section#beliefs
       ul
         li
           +add-bullet($grid / 4)
+          margin-bottom: 8px
     &:nth-of-type(3)
       +position-left-top(absolute, $grid * 6, 680px)
       width: $grid * 7 / 2
       ul
         li
           +add-bullet($grid / 4)
+          margin-bottom: 8px
 
 
 
@@ -320,14 +328,14 @@ section#tech-stack
     p
       width: $grid * 3
       +font($font-ibm-plex-mono, $color-highlight-light, 14px, 20px, italic)
-      margin-top: $grid * 5/4
+      margin-top: 120px
       position: relative
       transition: opacity .35s
       opacity: 0
       &:before
         +add-content-and-display-block
-        +position-left-top(absolute, 0, -$grid * 3/4)
-        +size($grid * 4, $grid / 4)
+        +position-left-top(absolute, 0, -75px)
+        +size($grid * 4, 30px)
         +add-stripped-background
   .tab-content
     &.active
@@ -384,7 +392,7 @@ section#personality
     +position-left-top(absolute, $grid * 7.5, 500px)
     &:after
       +position-left-top(absolute, 0, 30px)
-      +size(100%, $grid / 4)
+      +size(100%, 15px)
       +add-content-and-display-block
       +add-stripped-background
   ul
@@ -405,9 +413,11 @@ section#contact
       transform: scaleX(0)
       transition: all .25s ease-in-out
   h4
+    top: $contact-bg-header-top
     span
       margin: 0 -33px
   h2
+    top: $contact-bg-header-top + $headers-y-offset
     span
       margin: 0 -11.5px
   &:hover
@@ -436,7 +446,7 @@ section#contact
             +add-content-and-display-block
             +position-block(absolute, 24px, 0, 0, 0, 1)
             +add-stripped-background
-            height: 20px
+            height: 30px
         &:nth-of-type(2)
           +font($font-ibm-plex-sans, 18px, 24px, 400, $color-text-light)
           a

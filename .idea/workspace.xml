@@ -20,28 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4556294b-897b-4bd4-bbe0-e09f56dc25bf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Pawel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Pawel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_TODO.TXT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/face.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/face.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/pawel_szymanski.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/stripes.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/app/anchor-scroll-animation.coffee" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/app/local-navigation-controller.coffee" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/app/nav-item-activator.coffee" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/app/parallax.coffee" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/app/parallax.coffee" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/helpers.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/mixins.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/mixins.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/mixins/clearfix.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/mixins/library/clearfix.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/mixins/disable-selection.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/mixins/library/disable-selection.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/mixins/font-face.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/mixins/library/font-face.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/mixins/font.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/mixins/library/font.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/mixins/gradient-radial.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/mixins/library/gradient-radial.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/mixins/position-block.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/mixins/library/position-block.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/mixins/position.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/mixins/library/position.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/mixins/size.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/mixins/library/size.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/animations.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_animations.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/animations/block-scrolling.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/animations/block-scrolling.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/animations/rotate.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/animations/rotate.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/animations/shrink-navigation-column.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/animations/shrink-navigation-column.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/mixins.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_mixins.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/mixins/library/gradient-radial.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/mixins/specific/add-stripped-background.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/mixins/specific/add-stripped-background.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/reset.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_reset.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/styles.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/styles.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/variables.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/variables.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/tags.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_tags.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/variables.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/_variables.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -151,7 +141,7 @@
       <workItem from="1595247200141" duration="12000" />
       <workItem from="1595249125710" duration="9000" />
       <workItem from="1596577510622" duration="297000" />
-      <workItem from="1597073300766" duration="65781000" />
+      <workItem from="1597073300766" duration="73929000" />
     </task>
     <servers />
   </component>
@@ -190,10 +180,10 @@
       <screen x="-1920" y="0" width="1920" height="1200" />
     </state>
     <state x="-1151" y="514" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1160/-1920.0.1920.1200/1920.0.1280.720@-1920.0.1920.1200" timestamp="1597180355221" />
-    <state x="-1253" y="333" width="585" height="534" key="find.popup" timestamp="1597092748139">
+    <state x="-1253" y="333" width="585" height="534" key="find.popup" timestamp="1597236749347">
       <screen x="-1920" y="0" width="1920" height="1200" />
     </state>
-    <state x="-1253" y="333" width="585" height="534" key="find.popup/0.0.1920.1160/-1920.0.1920.1200/1920.0.1280.720@-1920.0.1920.1200" timestamp="1597092748139" />
+    <state x="-1253" y="333" width="585" height="534" key="find.popup/0.0.1920.1160/-1920.0.1920.1200/1920.0.1280.720@-1920.0.1920.1200" timestamp="1597236749347" />
     <state width="600" height="428" key="javadoc.popup" timestamp="1597180327490">
       <screen x="-1920" y="0" width="1920" height="1200" />
     </state>
