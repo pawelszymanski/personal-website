@@ -21,7 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4556294b-897b-4bd4-bbe0-e09f56dc25bf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/app/local-navigation-controller.coffee" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/app/local-navigation-controller.coffee" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/styles.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/styles.sass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +130,7 @@
       <workItem from="1595247200141" duration="12000" />
       <workItem from="1595249125710" duration="9000" />
       <workItem from="1596577510622" duration="297000" />
-      <workItem from="1597073300766" duration="90295000" />
+      <workItem from="1597073300766" duration="90909000" />
     </task>
     <servers />
   </component>

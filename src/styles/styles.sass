@@ -141,7 +141,7 @@ section#summary
     top: $summary-bg-header-top + $headers-y-offset
   div
     +position-left-top(absolute, $grid * 3, $summary-bg-header-top + 170px)
-    width: $grid * 4
+    width: $grid * 4 + 10px
     h5:first-of-type
       &:before
         +add-content-and-display-block
@@ -171,7 +171,7 @@ section#summary
       margin-bottom: 4px
   cite
     +position-left-top(absolute, $grid * 2, 790px)
-    width: 440px
+    width: 500px
 
 
 $proficiencies-bg-header-top: $bg-header-top-base + $nav-item-y-size * 2
@@ -247,7 +247,6 @@ section#beliefs
         margin-bottom: 2px
         em
           display: inline-block
-          border-bottom: 1px dashed fade-out($color-highlight-light, .75)
           margin-right: 2px
     a
       text-decoration: none
