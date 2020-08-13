@@ -11,8 +11,8 @@ class LocalNavigationController
 
   THROTTLE: 50
 
-  scrollToTop: =>
-    $('html, body').animate {scrollTop: 0}, 500
+  scrollToTop: (callback) =>
+
 
   setActiveAnchor: (anchorName) =>
     $(@NAVIGATION_ANCHOR_SELECTOR).removeClass(@ACTIVE_CLASS)
@@ -49,9 +49,10 @@ class LocalNavigationController
   constructor: ->
     @timeout = null
 
-    @scrollToTop()
-    @initAnchorClickEvent()
-    @initWindowScrollEvent()
+    $('html, body').animate {scrollTop: 0}, 500, null, () =>
+      @setActiveAnchor(@getVisibleSectionName())
+      @initAnchorClickEvent()
+      @initWindowScrollEvent()
 
 
 
