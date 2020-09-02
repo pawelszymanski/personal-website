@@ -102,10 +102,10 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Karma.Tests (personal-website)" />
-      <item itemvalue="Protractor.E2E Tests (personal-website)" />
       <item itemvalue="JavaScript Debug.Angular Application" />
+      <item itemvalue="Karma.Tests (personal-website)" />
       <item itemvalue="npm.Angular CLI Server" />
+      <item itemvalue="Protractor.E2E Tests (personal-website)" />
     </list>
   </component>
   <component name="SvnConfiguration">
