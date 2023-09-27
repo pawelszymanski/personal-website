@@ -5,6 +5,9 @@
   "private": true,
   "author": "Pawel Szymanski",
   "licence": "MIT",
+  "scripts": {
+    "start": "npx gulp"
+  },
   "devDependencies": {
     "coffeescript": "2.5.1",
     "del": "5.1.0",
@@ -14,6 +17,7 @@
     "gulp-concat": "2.6.1",
     "gulp-connect": "5.7.0",
     "gulp-sourcemaps": "2.6.5",
-    "gulp-minify": "3.1.0"
+    "gulp-minify": "3.1.0",
+    "node": "14.21.3"
   }
 }
